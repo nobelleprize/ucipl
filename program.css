@@ -88,3 +88,20 @@ footer {
     background-color: black;
     color: white;
 }
+
+#social {
+    float: right;
+    padding: 0 150px 0 0;
+
+}
+
+#social > div.instagram {
+    float: right;
+    padding: 0 150px 0 0;
+
+}
+
+#social img {
+    display: block;
+    margin-bottom: 20px;
+}
