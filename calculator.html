@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UCI Powerlifting</title>
+    <link href="calculator.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<header>
+    <h1>
+    <center><img src="https://i.imgur.com/YtL5Qyq.jpg" style="width:220px; height:175px;"></center>
+    </h1>
+    <ul class="nav">
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='program.html'>Programs</a></li>
+                <li><a href='training.html'>Training Submissions</a></li>
+                <li><a href='calculator.html'>Calculators</a></li>
+                <li><a href='http://uspa.net/' target="_blank">USPA</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+    </ul>
+</header>
+
+<script type="text/javascript" src="wilks.js"></script>
+
+<body>
+    <div class="w-calc">
+        <select id="sex">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <select id="units">
+            <option value="kg">kg</option>
+            <option value="lb">lb</option>
+        </select>
+        <p>Body Weight: <input id="weight" type="number"></p>
+        <p>Total: <input id="total" type="number"></p>
+        <input type="button" onClick="computeWilks()" value="Calculate"/>
+        <h2 id="wilks"></h2>
+    </div>
+</body> 
+
+<footer>
+        <p>test</p>
+    </footer>
+    
+</html>
