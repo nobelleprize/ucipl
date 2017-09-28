@@ -14,7 +14,9 @@ html {
 
 body {
     height: 100%;
+    width: 100%;
     overflow: auto;
+    vertical-align: middle;
 }
 
 
@@ -24,7 +26,6 @@ body {
     color: white;
     list-style: none;
     text-align: center;
-    overflow: auto;
     height: 100%;
 
 }
@@ -49,38 +50,33 @@ body {
 
 }
 
+h2 {
+    padding: 10px;
+    text-align: right;
+    font-size: 25px;
+}
+
 footer {
     margin-top: 500px;
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color: black;
     color: white;
 }
 
-h2 {
-    text-align: center;
-    font-size: 50px;
-}
-
-#foot{
-    overflow: hidden;
-}
-
 #social {
     float: right;
-    padding: 0 150px 0 0;
+    padding: 10px 50px 0 0;
 
 }
 
 #social > div.instagram {
     float: right;
-    padding: 0 150px 0 0;
+    padding: 0 50px 0 0;
 
 }
-
 
 #social img {
     display: block;
     margin-bottom: 20px;
 }
-
