@@ -16,29 +16,18 @@ body {
 }
 
 .slideshow{
-    background-color: #DCEAF7;
+    background-color: black;
 }
 
 .slideshow-container{
-    width: 960px;
-    height: 590px;
+    width: 100%;
     position: relative;
     margin: auto;
+    height: 650px;
 }
 
 .slides{
     display: none;
-}
-
-
-.caption{
-    text-align: center;
-    font-size: 15px;
-    position: absolute;
-    width: 100%;
-    padding: 8px 16px;
-    bottom: 8px;
-    color: gray;
 }
 
 .prev, .next{
@@ -61,14 +50,22 @@ body {
     background: rgba(0, 0, 0, 0.8)
 }
 
+.dots-background{
+    position: relative;
+    background-color: black;
+    height: 65px;
+}
+
 .dots{
+    margin: 20px 5px;
+    position: relative;
     text-align: center;
-    width: 13px;
-    height: 13px;
     display: inline-block;
-    background: gray;
-    padding: 5px;
+    background: white;
+    padding: 10px;
     border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .fade{
@@ -79,6 +76,10 @@ body {
 @keyframes fade{
     from{opacity: 0.4}
     to{opacity: 1}
+}
+
+.dots:hover{
+    background: red;
 }
 
 .nav {
@@ -101,7 +102,7 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 15px 0;
 }
 
 .nav > li > a:hover {

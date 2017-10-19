@@ -24,32 +24,19 @@
     <div class='slideshow'>
     <div class='slideshow-container'>
 
-        <div class="slides">
-            <div><img src="https://i.imgur.com/JKk8HTu.jpg" style="width: 960px; height: 590px"></div>
+        <div class="slides fade">
+            <div><img src="https://i.imgur.com/x6YGY2v.jpg" style="width: 100%; height: 650px"></div>
+        </div>     
+        <div class="slides fade">
+            <div><img src="https://i.imgur.com/RqPVXdt.jpg" style="width: 100%; height: 650px"></div>
         </div>
 
-        <div class="slides">
-            <div><img src="https://i.imgur.com/uTVCVts.jpg" style="width: 960px; height: 590px"></div>
-        </div>
-        
-        <div class="slides">
-            <div><img src="https://i.imgur.com/7OBEVah.jpg" style="width: 960px; height: 590px"></div>
-        </div>
-        
-        <div class="slides">
-            <div><img src="https://i.imgur.com/15CuA3J.jpg" style="width: 960px; height: 590px"></div>
+        <div class="slides fade">
+            <div><img src="https://i.imgur.com/EU2Qr4x.jpg" style="width: 100%; height: 650px"></div>
         </div>
 
-        <div class="slides">
-            <div><img src="https://i.imgur.com/BD4TANC.jpg" style="width: 960px; height: 590px"></div>
-        </div>
-
-        <div class="slides">
-            <div><img src="https://i.imgur.com/BunpUQg.jpg" style="width: 960px; height: 590px"></div>
-        </div>
-
-        <div class="slides">
-            <div><img src="https://i.imgur.com/kbcTzUP.jpg" style="width: 960px; height: 590px"></div>
+        <div class="slides fade">
+            <div><img src="https://i.imgur.com/g1ScP0T.jpg" style="width: 100%; height: 650px"></div>
         </div>
 
         <a class="prev" onclick="plusIndex(-1)">&#10094;</a>
@@ -57,30 +44,40 @@
 
     </div>
     </div>
-    <br/>
+    <div style="text-align:center;">
+        <div class='dots-background'>
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
 
-
-<script type="text/javascript">
-    var slideIndex = 1;
+    <script type="text/javascript">
+        var slideIndex = 1;
     
-    showImage(slideIndex);
+        showImage(slideIndex);
 
-    function plusIndex(n){
-        showImage(slideIndex += n);
-    }
+        function plusIndex(n){
+            showImage(slideIndex += n);
+        }
 
-    function showImage(n){
-        var slide = document.getElementsByClassName("slides");
+        function currentSlide(n){
+            showImage(slideIndex = n);
+        }
 
-        if (n > slide.length) {slideIndex = 1};
-        if (n < 1) {slideIndex = slide.length};
+        function showImage(n){
+            var slide = document.getElementsByClassName("slides");
 
-        for (var i = 0; i < slide.length; i++) {
-            slide[i].style.display = "none";
-        };
-        slide[slideIndex-1].style.display = "block"
-    }
-</script>
+            if (n > slide.length) {slideIndex = 1};
+            if (n < 1) {slideIndex = slide.length};
+
+            for (var i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            };
+            slide[slideIndex-1].style.display = "block"
+        }
+    </script>
 
 
 </body>

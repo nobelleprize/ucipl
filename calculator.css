@@ -65,7 +65,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     padding: 20px 20px 50px 20px;
-    border-style: double;
+    border-style: solid;
+    border-color: lightcoral;
     text-align: right;
 }
 
