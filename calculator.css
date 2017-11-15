@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Patua+One);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Patua+One|Roboto|Open+Sans|Roboto+Slab|Oswald);
 
 * { 
     padding: 0;
@@ -16,40 +15,48 @@ html {
     height: 100%;
 }
 
-body {
-    height: 100%;
-    overflow: auto;
 
+body {
+    margin: 0;
 }
 
+
 .nav {
-    font-family: 'Montserrat';
+    width: auto;
+    font-family: 'Oswald';
+    font-size: 20px;
     background-color: #595959;
     color: white;
     list-style: none;
     text-align: center;
     height: 100%;
+    white-space: nowrap;
 }
+
 
 .nav > li {
+    text-align: center;
     display: inline-block;
-    padding-right: 10px;
-    width: 13%;
+    width: 14.08%;
+    max-width: 100%;
 
 }
+
 
 .nav > li > a {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 20px 0 20px 0;
+    padding: 5% 0 5% 0;
 }
+
 
 .nav > li > a:hover {
     background-color: black;
     color: white;
-
 }
+
+
 
 .w-calc {
     width: 400px;
@@ -70,36 +77,51 @@ body {
     text-align: right;
 }
 
+
 h2 {
     padding: 10px;
     text-align: right;
     font-size: 25px;
 }
 
+
 footer {
     font-family: 'Patua One';
-    margin-top: 500px;
     width: 100%;
-    height: 300px;
+    height: 10%;
     background-color: black;
     color: white;
+    border-top: white;
+    margin-top: 3%;
 }
+
 
 #social {
-    float: right;
-    padding: 10px 50px 0 0;
-
-}
-
-#social > div.instagram {
-    float: right;
-    padding: 0 50px 0 0;
-
-}
-
-#social img {
-    display: block;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 3%;
 }
 
 
+.facebook {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.instagram {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 3%;
+}
+
+
+.contact {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 3%;
+    font-size: 30px;
+    text-decoration: none;
+}
