@@ -1,152 +1,107 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Patua+One|Roboto|Open+Sans|Roboto+Slab|Oswald);
-
 * { 
     padding: 0;
     margin: 0;
   }
 
-
 h1 {
     background-color: black;
 }
 
-
-body {
-    margin: 0;
-    padding: 0;
+html {
+    overflow: hidden;
+    height: 100%;
 }
 
+body {
+    height: 100%;
+    overflow: auto;
+}
 
 .nav {
-    width: auto;
-    font-family: 'Oswald';
-    font-size: 20px;
+    font-family: 'Trebuchet MS';
     background-color: #595959;
     color: white;
     list-style: none;
     text-align: center;
-    height: 100%;
-    white-space: nowrap;
-}
 
+}
 
 .nav > li {
-    text-align: center;
     display: inline-block;
-    width: 14.08%;
-    max-width: 100%;
+    padding-right: 10px;
+    width: 13%;
 
 }
-
 
 .nav > li > a {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 5% 0 5% 0;
+    padding: 20px 0 20px 0;
 }
-
 
 .nav > li > a:hover {
     background-color: black;
     color: white;
+
 }
-
-
 
 table, th, td {
     font-size: 18px;
 }
 
-
 table {
+    height: 40%;
     margin: 20px auto;
     overflow-y: scroll;
+    position: static;
     width: 90%;
     table-layout: fixed;
-    border-spacing: 5px;
-    outline-style: solid;
-    outline-color: rgb(255, 210, 0);
 }
 
-
 th {
-    background: rgb(0, 100, 164);
+    background: #228EEC;
     color: #FFF;
-    font-family: 'Oswald';
-    font-size: 25px;
+    font-family: 'Arial';
+    font-size: 16px;
     text-transform: uppercase;
     padding: 20px 10px 20px 10px;
 }
 
-
 td {
+    background: #D2CFCF;
     text-align: center;
-    background: white;
-    font-family: 'Montserrat';
+    font-family: 'Franklin Gothic Medium';
     padding: 20px 10px 20px 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    
+
 
 }
-
-
-.left {
-    text-align: left;
-}
-
 
 div {
     word-spacing: 5px;
 }
 
-
-h2 {
-    padding: 10px;
-    text-align: right;
-    font-size: 25px;
-}
-
-
 footer {
-    position: fixed;
-    font-family: 'Patua One';
+    margin-top: 500px;
     width: 100%;
-    height: 20%;
+    height: 200px;
     background-color: black;
     color: white;
-    border-top: white;
-    margin-top: 8%;
 }
-
 
 #social {
-    text-align: center;
-    padding: 3%;
+    float: right;
+    padding: 0 150px 0 0;
+
 }
 
+#social > div.instagram {
+    float: right;
+    padding: 0 150px 0 0;
 
-.facebook {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
-
-.instagram {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-right: 3%;
-}
-
-
-.contact {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 3%;
-    font-size: 30px;
-    text-decoration: none;
+#social img {
+    display: block;
+    margin-bottom: 20px;
 }
