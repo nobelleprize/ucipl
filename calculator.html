@@ -4,9 +4,9 @@
     <title>Calculators</title>
     <link href="calculator.css" type="text/css" rel="stylesheet"/>
 </head>
-
 <body>
-    <header>
+<div id="container">
+    <div id="header">
         <h1>
         <center><img src="https://i.imgur.com/YtL5Qyq.jpg" style="width:220px; height:175px;"></center>
         </h1>
@@ -19,38 +19,57 @@
                     <li><a href='about.html'>About</a></li>
                     <li><a href='contact.html'>Contact</a></li>
         </ul>
-    </header>
-
-
-    <script type="text/javascript" src="wilks.js"></script>
-
-
-        <div class='calc-bg'>
-            <div class="w-calc">
-                <select id="sex">
-                    <option value="male">male</option>
-                    <option value="female">female</option>
-                </select>
-                <select id="units">
-                    <option value="kg">kg</option>
-                    <option value="lb">lb</option>
-                </select>
-                <p>Body Weight: <input id="weight" type="number"></p>
-                <p>Total: <input id="total" type="number"></p>
-                <input type="button" onClick="computeWilks()" value="Calculate"/>
-                <h2 id="wilks"></h2>
-            </div>
+    </div>
+    <div id="body">
+        <script type="text/javascript" src="wilks.js"></script>
+        <div class="w-calc">
+        <div class="input-wrap">
+            <label>Units: </label>
+                <select class='input' id="units"> </p>
+                <option value='select' selected>select</option>
+                <option value="kg">kg</option>
+                <option value="lb">lb</option></select>
+        </div>
+        
+        <div class="input-wrap">
+            <label>Gender: </label>
+                <select class='input' id="sex"> </p>
+                <option value='select' selected>select</option>
+                <option value="male">male</option>
+                <option value="female">female</option></select>
+        </div>
+        
+        <div class="input-wrap">
+            <label>Body Weight: </label>
+                <input class='input' id="weight" type="number">
         </div>
 
-    <script type="text/javascript" src="tdee.js"></script>
+        <div class="input-wrap">
+            <label>Total: </label>
+                <input class='input' id="total" type="number">
+        </div>
+        <br>
+        <div class="input-wrap">
+            <input type="button" onClick="computeWilks()" value="Calculate" style="float: right"/>
+            <h2 id="wilks"></h2>
+        </div>
+        </div>
 
         <div class='tdee-calc'>
-            <select id="t-sex">
+            <script type="text/javascript" src="tdee.js"></script>
+            <p>Units: <select id="t-units"></p>
+                <option value='select' selected>select</option>
+                <option value="kg">kg</option>
+                <option value="lb">lb</option>
+            </select>  
+            <p>Gender: <select id="t-sex"> </p>
+                <option value='select' selected>select</option>
                 <option value="male">male</option>
                 <option value="female">female</option>
             </select>
-            <p>Age: <input id="age" type="number"></p>
-            <select id="height">
+            <p>Age: <input id="age" style="width: 15%;" type="number"></p>
+            <p>Height: <select id="height"> </p>
+                <option value='select' selected>select</option>
                 <option value="55">4ft 7in</option>
                 <option value="56">4ft 8in</option>
                 <option value="57">4ft 9in</option>
@@ -63,7 +82,7 @@
                 <option value="64">5ft 4in</option>
                 <option value="65">5ft 5in</option>
                 <option value="66">5ft 6in</option>
-                <option value="67" selected>5ft 7in</option>
+                <option value="67">5ft 7in</option>
                 <option value="68">5ft 8in</option>
                 <option value="69">5ft 9in</option>
                 <option value="70">5ft 10in</option>
@@ -81,13 +100,10 @@
                 <option value="82">6ft 10in</option>
                 <option value="83">6ft 11in</option>
                 <option value="84">7ft</option>
-            </select>
-            <select id="t-units">
-                    <option value="lb">lb</option>
-                    <option value="kg">kg</option>
-            </select>           
-            <p>Weight: <input id="t-weight" type="number"></p>
-            <select id="lifestyle">
+            </select>         
+            <p>Body Weight: <input id="t-weight" style="width: 15%;"  type="number"></p>
+            <p>Lifestyle: <select id="lifestyle"></p>
+                <option value='select' selected>select</option>
                 <option value="sedentary">sedentary</option>
                 <option value="lightly">lightly active</option>
                 <option value="moderate">moderately active</option>
@@ -97,15 +113,12 @@
             <input type="button" onClick="computeTDEE()" value="Compute"/>
             <h3 id="TDEE"></h3>
         </div>
-
-    <footer>
-            <div id="social">
-                <a class="instagram" href="http://instagram.com/ucipowerlifting"><img src="https://i.imgur.com/e7fsd60.jpg" width="60" height="60"></a>
-                <a class="facebook" href="https://www.facebook.com/groups/788049644580281/?ref=br_rs"><img src="https://i.imgur.com/812KuNA.jpg" width="60" height="60"></a>
-                <a class="contact" href='contact.html'><font color="white">Contact</font></a>
-            </div>
-        </div>
-    </footer>
-</body> 
-
+    </div>
+    <div id="footer">
+        <a class="instagram" href="http://instagram.com/ucipowerlifting"><img src="https://i.imgur.com/e7fsd60.jpg" width="60" height="60"></a>
+        <a class="facebook" href="https://www.facebook.com/groups/788049644580281/?ref=br_rs"><img src="https://i.imgur.com/812KuNA.jpg" width="60" height="60"></a>
+        <a class="contact" href='contact.html'><font color="white">Contact</font></a>
+    </div>
+</div>
+</body>
 </html>
