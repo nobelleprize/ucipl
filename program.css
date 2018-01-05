@@ -1,37 +1,45 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Patua+One|Roboto|Open+Sans|Roboto+Slab|Oswald);
-/** {
-    border: 1px solid red;
-}
-*/
+
+* { 
+    padding: 0;
+    margin: 0;
+  }
 
 html, body {
-   margin:0;
-   padding:0;
-   height:100%;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
 #container {
-   min-height:100%;
-   position:relative;
+    min-height:100%;
+    position:relative;
 }
-
+ 
 #header {
-   background: black;
+    background: black;
 }
 
+h1 {
+    background-color: black;
+}
+
+h1{
+    margin: 0; /* Logo margin */
+}
 
 .nav {
     width: auto;
     font-family: 'Oswald';
-    font-size: 1.6vw;
+    font-size: 20px;
     background-color: #595959;
     color: white;
     list-style: none;
     text-align: center;
     height: 100%;
     white-space: nowrap;
-    margin: 0;
 }
+
 
 .nav > li {
     text-align: center;
@@ -95,10 +103,6 @@ td {
    height: 15%;   /* Height of the footer */
    background: black;
    text-align: center;
-}
-
-h1{
-    margin: 0;
 }
 
 img{

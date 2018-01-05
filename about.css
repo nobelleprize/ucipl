@@ -5,17 +5,14 @@
     margin: 0;
   }
 
-
 h1 {
     background-color: black;
 }
-
 
 body {
     margin: 0;
     padding: 0;
 }
-
 
 .nav {
     width: auto;
@@ -29,7 +26,6 @@ body {
     white-space: nowrap;
 }
 
-
 .nav > li {
     text-align: center;
     display: inline-block;
@@ -38,7 +34,6 @@ body {
 
 }
 
-
 .nav > li > a {
     text-decoration: none;
     color: white;
@@ -46,13 +41,10 @@ body {
     padding: 5% 0 5% 0;
 }
 
-
 .nav > li > a:hover {
     background-color: black;
     color: white;
 }
-
-
 
 h2{
     background-color: white;
@@ -64,7 +56,6 @@ h2{
     padding: 0 0 0 10%;
 }
 
-
 footer {
     font-family: 'Patua One';
     width: 100%;
@@ -75,12 +66,10 @@ footer {
     margin-top: 10%;
 }
 
-
 #social {
     text-align: center;
     padding: 3%;
 }
-
 
 .facebook {
     display: inline-block;
@@ -88,14 +77,12 @@ footer {
     margin-right: auto; 
 }
 
-
 .instagram {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-right: 3%;
 }
-
 
 .contact {
     display: inline-block;

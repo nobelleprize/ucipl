@@ -7,15 +7,15 @@
 
 
 h1 {
-    background-color: black;
+    background-color: white;
+    margin: 0; /* Fix Logo margin */
 }
 
 
 body {
     height: 100%;
-    margin: 0 auto -200px;
+    margin: 0 auto -175px;
 }
-
 
 .nav {
     width: auto;
@@ -29,7 +29,6 @@ body {
     white-space: nowrap;
 }
 
-
 .nav > li {
     text-align: center;
     display: inline-block;
@@ -38,7 +37,6 @@ body {
 
 }
 
-
 .nav > li > a {
     text-decoration: none;
     color: white;
@@ -46,12 +44,10 @@ body {
     padding: 5% 0 5% 0;
 }
 
-
 .nav > li > a:hover {
     background-color: black;
     color: white;
 }
-
 
 .slideshow-container{
     position: relative;

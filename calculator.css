@@ -24,11 +24,10 @@ h1 {
     background-color: black;
 }
 
-
 .nav {
     width: auto;
     font-family: 'Oswald';
-    font-size: 1.6vw;
+    font-size: 20px;
     background-color: #595959;
     color: white;
     list-style: none;
@@ -46,7 +45,6 @@ h1 {
 
 }
 
-
 .nav > li > a {
     text-decoration: none;
     color: white;
@@ -54,55 +52,90 @@ h1 {
     padding: 5% 0 5% 0;
 }
 
-
 .nav > li > a:hover {
     background-color: black;
     color: white;
 }
 
 #body {
-    padding:10px;
-    padding-bottom: 10%;   /* Height of the footer */
+    padding: 10px;
+    padding-bottom: 13%;   /* Height of the footer */
+    background: linear-gradient(90deg, #0064a4 5%, white 40%);
+    /*
+    background-image: url('https://i.imgur.com/zNzIPvy.png');
+    background-repeat: repeat-y;
+    background-size: 37% auto;
+    */
 }
 
 .input-wrap label{
     display: inline-block;
     text-align: right;
-    padding-right: 1vw;
+    padding-right: 16px;
     width: 150px;
+    font-size: 20px;
 }
 
 .input{
     display: inline-block;
     text-align: right;
+    width: 80px;
+}
+
+#body .calc-title{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .w-calc{
-    width: 28%;
-    margin: 2%;
+    width: 22%;
+    margin: 5%;
     border-style: solid;
     border-color: rgb(255, 210, 0);
     font-family: 'Oswald';
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 20px;
+    background: white;
+    display: inline-block;
 }
 
+.w-desc, .w-desc ul{
+    float: right;
+    padding-top: 3.5%;
+    padding-right: 5%;
+    font-family: 'Roboto Slab';
+    list-style-type: none;
+}
+
+
 .tdee-calc{
-    margin: 2%;
+    width: 22%;
+    margin: 5%;
     border-style: solid;
     border-color: rgb(255, 210, 0);
     font-family: 'Oswald';
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 20px 20px 50px 20px;
+    padding: 20px;
+    background: white;
+    display: inline-block;
+}
+
+.t-desc, .t-desc ul{
+    float: right;
+    padding-top: 4%;
+    padding-right: 21%;
+    font-family: 'Roboto Slab';
+    list-style-type: none;
 }
 
 h2 {
     padding: 10px;
-    text-align: right;
+    text-align: center;
     font-size: 25px;
 }
 
@@ -112,7 +145,7 @@ h2 {
     font-family: 'Patua One';
     bottom: 0;
     width: 100%;
-    height: 10%;   /* Height of the footer */
+    height: 13%;   /* Height of the footer */
     background: black;
     text-align: center;
 }

@@ -20,12 +20,14 @@
                     <li><a href='contact.html'>Contact</a></li>
         </ul>
     </div>
+
     <div id="body">
-        <script type="text/javascript" src="wilks.js"></script>
         <div class="w-calc">
+        <script type="text/javascript" src="wilks.js"></script>
+        <div class="calc-title"><p>Wilks Calculator</p></div>
         <div class="input-wrap">
             <label>Units: </label>
-                <select class='input' id="units"> </p>
+                <select class='input' id="units">
                 <option value='select' selected>select</option>
                 <option value="kg">kg</option>
                 <option value="lb">lb</option></select>
@@ -33,7 +35,7 @@
         
         <div class="input-wrap">
             <label>Gender: </label>
-                <select class='input' id="sex"> </p>
+                <select class='input' id="sex">
                 <option value='select' selected>select</option>
                 <option value="male">male</option>
                 <option value="female">female</option></select>
@@ -48,27 +50,45 @@
             <label>Total: </label>
                 <input class='input' id="total" type="number">
         </div>
+
         <br>
-        <div class="input-wrap">
-            <input type="button" onClick="computeWilks()" value="Calculate" style="float: right"/>
-            <h2 id="wilks"></h2>
+        <h2 id="wilks"><p>Wilks =</p></h2>
+        <input type="button" onClick="computeWilks()" value="Calculate" style="float: right"/>
         </div>
+        <div class="w-desc">
+            <ul>
+                <li>The Wilks Formula is used to measure the strength of a powerlifter against other powerlifters regardless of different weight classes.</li>
+                <li>As a rough estimate, </li>
+            </ul>
         </div>
 
         <div class='tdee-calc'>
             <script type="text/javascript" src="tdee.js"></script>
-            <p>Units: <select id="t-units"></p>
+            <div class="calc-title"><p>TDEE Calculator</p></div>
+            <div class="input-wrap">
+                <label>Units:</label>
+                <select class='input' id="t-units">
                 <option value='select' selected>select</option>
                 <option value="kg">kg</option>
-                <option value="lb">lb</option>
-            </select>  
-            <p>Gender: <select id="t-sex"> </p>
+                <option value="lb">lb</option></select>  
+            </div>
+            
+            <div class="input-wrap">
+                <label>Gender:</label>
+                <select class='input' id="t-sex"> 
                 <option value='select' selected>select</option>
                 <option value="male">male</option>
-                <option value="female">female</option>
-            </select>
-            <p>Age: <input id="age" style="width: 15%;" type="number"></p>
-            <p>Height: <select id="height"> </p>
+                <option value="female">female</option></select>
+            </div>
+
+            <div class="input-wrap">
+                <label>Age:</label>
+                <input class='input' id="age" type="number">
+            </div>
+            
+            <div class="input-wrap">
+                <label>Height:</label>
+                <select class='input' id="height">
                 <option value='select' selected>select</option>
                 <option value="55">4ft 7in</option>
                 <option value="56">4ft 8in</option>
@@ -99,21 +119,36 @@
                 <option value="81">6ft 9in</option>
                 <option value="82">6ft 10in</option>
                 <option value="83">6ft 11in</option>
-                <option value="84">7ft</option>
-            </select>         
-            <p>Body Weight: <input id="t-weight" style="width: 15%;"  type="number"></p>
-            <p>Lifestyle: <select id="lifestyle"></p>
+                <option value="84">7ft</option></select>   
+            </div>
+            
+            <div class="input-wrap">
+                <label>Body Weight:</label>
+                <input class='input' id="t-weight" type="number">
+            </div>
+
+            <div class="input-wrap">
+                <label>Lifestyle:</label>
+                <select class='input' id="lifestyle">
                 <option value='select' selected>select</option>
                 <option value="sedentary">sedentary</option>
                 <option value="lightly">lightly active</option>
                 <option value="moderate">moderately active</option>
                 <option value="very">very active</option>
-                <option value="extremely">extremely active</option>
-            </select>
-            <input type="button" onClick="computeTDEE()" value="Compute"/>
-            <h3 id="TDEE"></h3>
+                <option value="extremely">extremely active</option></select>
+            </div>
+            <br>
+            <h2 id="TDEE"><p>TDEE =</p></h2>
+            <input type="button" onClick="computeTDEE()" value="Compute" style="float: right"/>
         </div>
+        <div class="t-desc">
+                <ul>
+                    <li>TDEE stands for Total Dailey Energy Expenditure, or the amount of calories you burn in a day.</li>
+                    <li>Add/Subtract calories from your TDEE in order to gain/lose weight</li>
+                </ul>
+            </div>
     </div>
+
     <div id="footer">
         <a class="instagram" href="http://instagram.com/ucipowerlifting"><img src="https://i.imgur.com/e7fsd60.jpg" width="60" height="60"></a>
         <a class="facebook" href="https://www.facebook.com/groups/788049644580281/?ref=br_rs"><img src="https://i.imgur.com/812KuNA.jpg" width="60" height="60"></a>
