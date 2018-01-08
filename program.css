@@ -63,7 +63,7 @@ h1{
 
 #body {
    padding:10px;
-   padding-bottom: 15%;   /* Height of the footer */
+   padding-bottom: 10%;   /* Height of the footer */
 }
 
 table {
@@ -100,9 +100,10 @@ td {
    font-family: 'Patua One';
    bottom: 0;
    width: 100%;
-   height: 15%;   /* Height of the footer */
+   height: 10%;   /* Height of the footer */
    background: black;
    text-align: center;
+   padding-bottom: 2%;
 }
 
 img{

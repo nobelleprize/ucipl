@@ -59,95 +59,97 @@ h1 {
 
 #body {
     padding: 10px;
-    padding-bottom: 13%;   /* Height of the footer */
+    padding-bottom: 10%;   /* Height of the footer */
     background: linear-gradient(90deg, #0064a4 5%, white 40%);
-    /*
-    background-image: url('https://i.imgur.com/zNzIPvy.png');
-    background-repeat: repeat-y;
-    background-size: 37% auto;
-    */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex: 1;
+    position: relative;
+}
+
+.row{
+    flex: 1;
+    display: flex;
+}
+
+.input-wrap{
+    padding: 2px 18% 2px 18%;
 }
 
 .input-wrap label{
+    width: 110px;
     display: inline-block;
-    text-align: right;
-    padding-right: 16px;
-    width: 150px;
-    font-size: 20px;
+    text-align: left;
 }
 
 .input{
-    display: inline-block;
-    text-align: right;
-    width: 80px;
-}
-
-#body .calc-title{
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 10px;
+    white-space: nowrap;
+    width: 110px;
 }
 
 .w-calc{
-    width: 22%;
-    margin: 5%;
+    font-size: 1.2em;
+    width: 20%;
+    margin: 5% 5% auto 5%;
     border-style: solid;
     border-color: rgb(255, 210, 0);
     font-family: 'Oswald';
-    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 20px;
     background: white;
-    display: inline-block;
+}
+
+.tdee-calc{
+    font-size: 1.2em;
+    width: 20%;
+    margin: 5% 5% 5% 5%;
+    border-style: solid;
+    border-color: rgb(255, 210, 0);
+    font-family: 'Oswald';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    background: white;
 }
 
 .w-desc, .w-desc ul{
-    float: right;
-    padding-top: 3.5%;
-    padding-right: 5%;
-    font-family: 'Roboto Slab';
+    margin: 60px auto auto 70px;
+    padding: 5px;
+    flex: 1;
     list-style-type: none;
-}
-
-
-.tdee-calc{
-    width: 22%;
-    margin: 5%;
-    border-style: solid;
-    border-color: rgb(255, 210, 0);
-    font-family: 'Oswald';
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 20px;
-    background: white;
-    display: inline-block;
+    font-family: 'Roboto Slab';
 }
 
 .t-desc, .t-desc ul{
-    float: right;
-    padding-top: 4%;
-    padding-right: 21%;
-    font-family: 'Roboto Slab';
+    margin: 60px auto auto 70px;
+    padding: 5px;
+    flex: 2;
     list-style-type: none;
+    font-family: 'Roboto Slab';
+}
+
+#body .calc-title{
+    font-size: 2em;
+    text-align: center;
 }
 
 h2 {
     padding: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
-
 #footer {
-    position: absolute;
     font-family: 'Patua One';
+    top: 0;
     bottom: 0;
     width: 100%;
-    height: 13%;   /* Height of the footer */
+    height: 10%;   /* Height of the footer */
     background: black;
     text-align: center;
+    padding-bottom: 2%;
 }
  
 h1{
@@ -166,14 +168,12 @@ img{
     margin-top: 2%;
 }
  
- 
 .instagram {
     display: inline-block;
     margin-left: auto;
     margin-right: 3%;
     margin-top: auto;
 }
- 
  
 .contact {
     display: inline-block;
