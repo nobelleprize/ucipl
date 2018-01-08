@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculators</title>
+    <link href="test.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>
+        <center><img src="https://i.imgur.com/YtL5Qyq.jpg" style="width:220px; height:175px;"></center>
+        </h1>
+        <ul class="nav">
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='program.html'>Programs</a></li>
+                    <li><a href='training.html'>Training Submissions</a></li>
+                    <li><a href='calculator.html'>Calculators</a></li>
+                    <li><a href='http://uspa.net/' target="_blank">USPA</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+        <div class='row'>
+        <div class="w-calc">
+        <script type="text/javascript" src="wilks.js"></script>
+        <div class="calc-title"><p>Wilks Calculator</p></div>
+        <div class="input-wrap">
+            <label>Units: </label>
+                <select class='input' id="units">
+                <option value='select' selected>select</option>
+                <option value="kg">kg</option>
+                <option value="lb">lb</option></select>
+        </div>
+        
+        <div class="input-wrap">
+            <label>Gender: </label>
+                <select class='input' id="sex">
+                <option value='select' selected>select</option>
+                <option value="male">male</option>
+                <option value="female">female</option></select>
+        </div>
+        
+        <div class="input-wrap">
+            <label>Body Weight: </label>
+                <input class='input' id="weight" type="number">
+        </div>
+
+        <div class="input-wrap">
+            <label>Total: </label>
+                <input class='input' id="total" type="number">
+        </div>
+
+        <br>
+        <h2 id="wilks"><p>Wilks =</p></h2>
+        <input type="button" onClick="computeWilks()" value="Calculate" style="float: right"/>
+        </div>
+        <div class="w-desc">
+            <ul>
+                <li>The Wilks Formula is used to measure the strength of a powerlifter against other powerlifters regardless of different weight classes.</li>
+                <li>As a rough estimate, </li>
+            </ul>
+        </div>
+        </div>
+
+        <div class='row'>
+        <div class='tdee-calc'>
+            <script type="text/javascript" src="tdee.js"></script>
+            <div class="calc-title"><p>TDEE Calculator</p></div>
+            <div class="input-wrap">
+                <label>Units:</label>
+                <select class='input' id="t-units">
+                <option value='select' selected>select</option>
+                <option value="kg">kg</option>
+                <option value="lb">lb</option></select>  
+            </div>
+            
+            <div class="input-wrap">
+                <label>Gender:</label>
+                <select class='input' id="t-sex"> 
+                <option value='select' selected>select</option>
+                <option value="male">male</option>
+                <option value="female">female</option></select>
+            </div>
+
+            <div class="input-wrap">
+                <label>Age:</label>
+                <input class='input' id="age" type="number">
+            </div>
+            
+            <div class="input-wrap">
+                <label>Height:</label>
+                <select class='input' id="height">
+                <option value='select' selected>select</option>
+                <option value="55">4ft 7in</option>
+                <option value="56">4ft 8in</option>
+                <option value="57">4ft 9in</option>
+                <option value="58">4ft 10in</option>
+                <option value="59">4ft 11in</option>
+                <option value="60">5ft</option>
+                <option value="61">5ft 1in</option>
+                <option value="62">5ft 2in</option>
+                <option value="63">5ft 3in</option>
+                <option value="64">5ft 4in</option>
+                <option value="65">5ft 5in</option>
+                <option value="66">5ft 6in</option>
+                <option value="67">5ft 7in</option>
+                <option value="68">5ft 8in</option>
+                <option value="69">5ft 9in</option>
+                <option value="70">5ft 10in</option>
+                <option value="71">5ft 11in</option>
+                <option value="72">6ft</option>
+                <option value="73">6ft 1in</option>
+                <option value="74">6ft 2in</option>
+                <option value="75">6ft 3in</option>
+                <option value="76">6ft 4in</option>
+                <option value="77">6ft 5in</option>
+                <option value="78">6ft 6in</option>
+                <option value="79">6ft 7in</option>
+                <option value="80">6ft 8in</option>
+                <option value="81">6ft 9in</option>
+                <option value="82">6ft 10in</option>
+                <option value="83">6ft 11in</option>
+                <option value="84">7ft</option></select>   
+            </div>
+            
+            <div class="input-wrap">
+                <label>Body Weight:</label>
+                <input class='input' id="t-weight" type="number">
+            </div>
+
+            <div class="input-wrap">
+                <label>Lifestyle:</label>
+                <select class='input' id="lifestyle">
+                <option value='select' selected>select</option>
+                <option value="sedentary">sedentary</option>
+                <option value="lightly">lightly active</option>
+                <option value="moderate">moderately active</option>
+                <option value="very">very active</option>
+                <option value="extremely">extremely active</option></select>
+            </div>
+            <br>
+            <h2 id="TDEE"><p>TDEE =</p></h2>
+            <input type="button" onClick="computeTDEE()" value="Compute" style="float: right"/>
+        </div>
+        <div class="t-desc">
+                <ul>
+                    <li>TDEE stands for Total Dailey Energy Expenditure, or the amount of calories you burn in a day.</li>
+                    <li>Add/Subtract calories from your TDEE in order to gain/lose weight</li>
+                </ul>
+            </div>
+    </div>
+    </div>
+
+    <div id="footer">
+        <a class="instagram" href="http://instagram.com/ucipowerlifting"><img src="https://i.imgur.com/e7fsd60.jpg" width="60" height="60"></a>
+        <a class="facebook" href="https://www.facebook.com/groups/788049644580281/?ref=br_rs"><img src="https://i.imgur.com/812KuNA.jpg" width="60" height="60"></a>
+        <a class="contact" href='contact.html'><font color="white">Contact</font></a>
+    </div>
+</div>
+</body>
+</html>
