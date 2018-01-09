@@ -5,6 +5,10 @@
     margin: 0;
   }
 
+div{
+    border: 1px solid red;
+}
+
 html, body {
     margin:0;
     padding:0;
@@ -75,6 +79,7 @@ h1 {
 
 .input-wrap{
     padding: 2px 18% 2px 18%;
+    width: 150px;
 }
 
 .input-wrap label{
@@ -90,7 +95,7 @@ h1 {
 
 .w-calc{
     font-size: 1.2em;
-    width: 20%;
+    width: 25%;
     margin: 5% 5% auto 5%;
     border-style: solid;
     border-color: rgb(255, 210, 0);
@@ -103,7 +108,7 @@ h1 {
 
 .tdee-calc{
     font-size: 1.2em;
-    width: 20%;
+    width: 25%;
     margin: 5% 5% 5% 5%;
     border-style: solid;
     border-color: rgb(255, 210, 0);
