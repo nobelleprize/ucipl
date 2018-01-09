@@ -8,6 +8,7 @@
 h1 {
     background-color: black;
     margin: 0; /* Fix Logo margin */
+    margin-bottom: -8px;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     background-color: #595959;
     color: white;
     list-style: none;
-    text-align: center;
+    text-align: scenter;
     height: 100%;
     white-space: nowrap;
 }
