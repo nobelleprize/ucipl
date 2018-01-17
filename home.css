@@ -158,3 +158,11 @@ footer {
     font-size: 30px;
     text-decoration: none;
 }
+
+.tab{
+    margin-left: 40px;
+}
+
+ul{
+    list-style-type: none;
+}
