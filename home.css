@@ -23,7 +23,7 @@ body {
     background-color: #595959;
     color: white;
     list-style: none;
-    text-align: scenter;
+    text-align: center;
     height: 100%;
     white-space: nowrap;
 }
@@ -56,15 +56,18 @@ body {
 
 .slides{
     display: block;
+    text-align: center;
+    background-color: black;
 }
+
 
 .prev, .next{
     position: absolute;
     top: 45%;
-    color: #383838;
+    color: #0064a4;
     font-weight: bold;
-    padding: 10px 10px;
-    font-size: 18px;
+    padding: 30px;
+    font-size: 30px;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
 }
